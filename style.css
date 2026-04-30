@@ -1,0 +1,476 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+
+    background: rgba(10, 37, 64, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #00ffd5;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.3px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(90deg, #00ffd5, #7b5cff);
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #00ffd5;
+}
+
+nav a.ativo {
+    color: #00ffd5;
+}
+
+nav a.ativo::after {
+    width: 100%;
+}
+
+.logo {
+    color: #00ffd5;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(135deg, #0a2540, #1e3a5f); 
+    color: white;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+}
+
+.hero-text p {
+    margin: 20px 0;
+}
+
+.btn {
+    background: #7b5cff;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-img img {
+    width: 320px;
+    border-radius: 10px;
+}
+
+.servicos {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0a2540, #1e3a5f);
+    color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 260px;
+    padding: 30px 20px;
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #00ffd5, #7b5cff);
+    top: 0;
+    left: -100%;
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    left: 0;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.4);
+}
+
+.card p {
+    color: #dcdcdc;
+}
+
+.diferenciais {
+    background: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.diferenciais ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+footer {
+    background: #0a2540;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.sobre {
+    background: #e8f0ec;
+    padding: 60px 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.sobre h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #1e3a5f;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.left {
+    left: 0;
+    text-align: right;
+}
+
+.right {
+    left: 50%;
+    text-align: left;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 3px solid #1e3a5f;
+    top: 25px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left::after {
+    right: -10px;
+}
+
+.right::after {
+    left: -10px;
+}
+
+.timeline-item h3 {
+    background: #ddd;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.left p, .left h2 {
+    text-align: right;
+}
+
+.right p, .right h2 {
+    text-align: left;
+}
+
+.info-sobre {
+    margin-top: 50px;
+}
+
+.contato-topo {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.contato-info, .contato-form {
+    width: 320px;
+    text-align: left;
+}
+
+.destaque {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.contato-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 90%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+    border-color: #7b5cff;
+    box-shadow: 0px 0px 5px rgba(123,92,255,0.5);
+}
+
+.contato-form textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.contato-form button {
+    background: linear-gradient(90deg, #7b5cff, #5a3dff);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contato-form button:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.portifolio-card .depoimento {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border-left: 4px solid #7b5cff;
+    padding: 10px;
+    font-style: italic;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.contato-form select {
+    width: 98%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.contato-info .btn {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.contato-info p a {
+    color: #0084ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contato-info p a:hover {
+    color: #7b5cff;
+    text-decoration: underline;
+}
+
+.info-sobre .card h3 {
+    color: #000000;
+}
+
+.info-sobre .card p {
+    color: #141414; 
+}
+
+.info-sobre .card:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.contato-form input,
+.contato-form textarea,
+.contato-form select {
+    font-family: Arial;
+    color: #555; 
+    font-size: 14px;
+}
+
+.contato-form input::placeholder,
+.contato-form textarea::placeholder {
+    color: #555;
+    font-family: Arial;
+    opacity: 1; 
+}
+.contato-form select {
+    color: #555;
+}
+
+.servicos {
+    background: linear-gradient(135deg, #0a2540, #1e3a5f);
+}
+
+.contato-info,
+.contato-form {
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    border-radius: 12px;
+}
+
+.contato-info.card,
+.contato-form.card {
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+
+.contato-info,
+.contato-form,
+.contato-info p,
+.contato-form p {
+    color: #ffffff;
+}
+
+.contato-form input,
+.contato-form textarea,
+.contato-form select {
+    background: rgba(255,255,255,0.8);
+}
+
+.servicos .card {
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    border-radius: 12px;
+}

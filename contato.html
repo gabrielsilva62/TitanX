@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Contato - TitanX</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ANIMAÇÃO */
+.animar {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.6s ease;
+}
+
+.animar.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 🔥 GLASSMORPHISM CONTROLADO */
+.contato-info,
+.contato-form {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.4);
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.08);
+
+    border-radius: 12px;
+}
+
+/* DEPOIMENTO EM GLASS */
+.cards .card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+/* MELHORA VISUAL DO MAPA */
+iframe {
+    border-radius: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">TitanX</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="portifolio.html">Portifólio</a>
+        <a href="estrutura.html">Estrutura</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
+
+<section class="servicos">
+    <h1>Fale Conosco</h1>
+
+    <p style="margin-bottom: 30px;">
+        Solicite um orçamento ou tire suas dúvidas com nossa equipe especializada.
+    </p>
+
+    <div class="contato-container">
+
+
+        <div class="card contato-info">
+            <h3>Entre em contato</h3>
+
+            <p>📞 <strong>Telefone:</strong><br> (11) 4002-8922</p>
+
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:5px;">
+                <div>
+                    💬 <strong>WhatsApp:</strong><br> (11) 98888-8888
+                </div>
+
+                <a href="https://wa.me/5511988888888" 
+                   target="_blank"
+                   class="btn"
+                   style="padding:8px 12px; font-size:14px;">
+                   💬 Conversar
+                </a>
+            </div>
+
+            <p class="destaque" style="margin-top:5px;">
+                ⏱ Respondemos em até 24h.
+            </p>
+
+            <p>📧 <strong>Email:</strong><br> contato@titanx.com</p>
+
+            <p>🕒 <strong>Horário:</strong><br> Seg - Sex | 09h às 18h</p>
+
+            <p>📍 <strong>Localização:</strong><br> 
+                <a href="https://www.google.com/maps?q=Av.+Maria+Coelho+Aguiar,+215,+São+Paulo" target="_blank">
+                Av. Maria Coelho Aguiar, 215 – Zona Sul
+                </a>
+            </p>
+
+            <div style="margin-top:20px;">
+                <iframe 
+                    src="https://www.google.com/maps?q=Av.+Maria+Coelho+Aguiar,+215,+São+Paulo&output=embed"
+                    width="100%" 
+                    height="200" 
+                    style="border:0;"
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Maria+Coelho+Aguiar,+215,+São+Paulo" 
+               target="_blank" 
+               class="btn"
+               style="display:block; margin-top:10px; text-align:center;">
+               📍 Traçar rota até a empresa
+            </a>
+
+        </div>
+
+        <div class="card contato-form">
+            <h3>Solicite um orçamento</h3>
+
+            <form action="sucesso.html">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu email" required>
+
+                <select required>
+                    <option value="">Selecione o assunto</option>
+                    <option>Orçamento</option>
+                    <option>Suporte</option>
+                    <option>Dúvida</option>
+                </select>
+
+                <textarea placeholder="Digite sua mensagem..." required></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+
+                <p style="font-size: 13px; color: #777; margin-top:10px;">
+                    🔒 Seus dados estão seguros conosco.
+                </p>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="cards" style="margin-top:50px;">
+        <div class="card">
+
+            <p id="depoimento-texto" class="animar ativo" style="font-style: italic;">
+                “Excelente atendimento e suporte rápido. Recomendo!”
+            </p>
+
+            <p id="depoimento-autor" class="animar ativo">
+                <strong>- Carlos Silva</strong>
+            </p>
+
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 TitanX Technologies</p>
+</footer>
+
+<script>
+const depoimentos = [
+    { texto: "Excelente atendimento e suporte rápido. Recomendo!", autor: "Carlos Silva" },
+    { texto: "Equipe extremamente profissional e eficiente.", autor: "Ana Souza" },
+    { texto: "Resolveram meu problema em poucas horas.", autor: "Marcos Lima" },
+    { texto: "Sistema entregue com qualidade e performance.", autor: "Fernanda Costa" },
+    { texto: "Atendimento muito ágil e suporte completo.", autor: "João Pereira" },
+    { texto: "Melhor empresa de tecnologia que já contratei.", autor: "Lucas Almeida" },
+    { texto: "Profissionais muito qualificados.", autor: "Juliana Martins" },
+    { texto: "Entrega rápida e comunicação excelente.", autor: "Rafael Gomes" },
+    { texto: "Recomendo para qualquer empresa.", autor: "Patrícia Rocha" },
+    { texto: "Serviço confiável e suporte de alto nível.", autor: "Bruno Oliveira" }
+];
+
+let index = 0;
+
+function trocarDepoimento() {
+    const texto = document.getElementById("depoimento-texto");
+    const autor = document.getElementById("depoimento-autor");
+
+    texto.classList.remove("ativo");
+    autor.classList.remove("ativo");
+
+    setTimeout(() => {
+        index = (index + 1) % depoimentos.length;
+
+        texto.innerText = "“" + depoimentos[index].texto + "”";
+        autor.innerHTML = "<strong>- " + depoimentos[index].autor + "</strong>";
+
+        texto.classList.add("ativo");
+        autor.classList.add("ativo");
+
+    }, 400);
+}
+
+setInterval(trocarDepoimento, 5000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Estrutura - TitanX</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+.servicos {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0a2540, #1e3a5f);
+    color: white;
+}
+
+.servicos h1 {
+    font-size: 36px;
+}
+
+.servicos h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #00ffd5;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 260px;
+    padding: 30px 20px;
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #00ffd5, #7b5cff);
+    top: 0;
+    left: -100%;
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    left: 0;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.4);
+}
+
+.card img {
+    width: 70px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    filter: brightness(1.2);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+
+.card p {
+    color: #dcdcdc;
+}
+
+.texto-estrutura {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #ddd;
+}
+
+.estrutura-extra {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.estrutura-extra p {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(8px);
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">TitanX</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="portifolio.html">Portifólio</a> 
+        <a href="estrutura.html">Estrutura</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
+
+<section class="servicos">
+    <h1>Estrutura Organizacional</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://img.icons8.com/?size=100&id=92022&format=png">
+            <h3>Diretoria de Operações (CEO)</h3>
+            <p>
+                Responsável pela estratégia, tomada de decisões e gestão geral da empresa.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://img.icons8.com/?size=100&id=96371&format=png">
+            <h3>Desenvolvimento Web (Frontend)</h3>
+            <p>
+                Criação de interfaces modernas e experiência do usuário.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://img.icons8.com/?size=100&id=97384&format=png">
+            <h3>Engenharia de Sistemas (Backend)</h3>
+            <p>
+                Desenvolvimento da lógica e funcionamento dos sistemas.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://img.icons8.com/?size=100&id=kGFZQjpSOYBg&format=png">
+            <h3>Administração de Dados (DBA)</h3>
+            <p>
+                Gerenciamento e segurança dos bancos de dados.
+            </p>
+        </div>
+
+    </div>
+
+    <p class="texto-estrutura">
+        Nossa estrutura organizacional é projetada para garantir eficiência,
+        inovação e alta performance em todos os projetos desenvolvidos.
+    </p>
+
+    <div class="estrutura-extra">
+        <p>✔ Equipes especializadas</p>
+        <p>✔ Metodologias ágeis</p>
+        <p>✔ Alta performance</p>
+        <p>✔ Segurança e escalabilidade</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 TitanX Technologies</p>
+</footer>
+
+</body>
+</html>
+
