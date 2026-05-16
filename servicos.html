@@ -1,89 +1,399 @@
-<section class="servicos">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>TitanX Technologies</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
 
-    <h1>Nossos Serviços</h1>
+<body class="pagina-servicos">
 
-    <p style="margin-bottom: 30px;">
-        Soluções tecnológicas que impulsionam resultados reais.
-    </p>
 
-    <div class="cards">
+<header>
+    <div class="logo">TitanX</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html"class="ativo">Serviço</a>
+        <a href="portifolio.html">Portifólio</a>
+        <a href="estrutura.html">Estrutura</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
 
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
-            <h3>Desenvolvimento Web</h3>
-            <p>Criação de sistemas modernos e responsivos.</p>
-            <p><strong>Tecnologias:</strong> HTML, CSS</p>
+<div class="menu-toggle">☰</div>
+
+</header>
+
+<link rel="stylesheet" href="style.css">
+
+
+<section class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-text">
+        <span class="tag">SOLUÇÕES INTELIGENTES</span>
+
+        <h1>Sistemas que <br> impulsionam seu negócio</h1>
+
+        <p>
+            Desenvolvemos softwares personalizados e fornecemos
+            a estrutura ideal de hardware para potencializar
+            os resultados da sua empresa.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#" class="btn azul" onclick="abrirModal(); return false;">Ver Planos</a>
+            <a href="contato.html" class="btn">
+    Solicitar Orçamento
+</a>
         </div>
-
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png">
-            <h3>Backend</h3>
-            <p>Sistemas escaláveis e seguros.</p>
-            <p><strong>Tecnologias:</strong> APIs, Node</p>
-        </div>
-
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/2906/2906274.png">
-            <h3>Banco de Dados</h3>
-            <p>Estruturação e otimização de dados.</p>
-            <p><strong>Tecnologias:</strong> SQL</p>
-        </div>
-
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png">
-            <h3>Consultoria</h3>
-            <p>Suporte técnico especializado.</p>
-            <p><strong>Foco:</strong> Performance</p>
-        </div>
-
     </div>
-
-    <h2 style="margin-top: 50px;">Benefícios</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <p>✔ Alta performance</p>
-        </div>
-
-        <div class="card">
-            <p>✔ Segurança de dados</p>
-        </div>
-
-        <div class="card">
-            <p>✔ Redução de custos</p>
-        </div>
-
-        <div class="card">
-            <p>✔ Suporte especializado</p>
-        </div>
-
-    </div>
-
-    <h2 style="margin-top: 50px;">Como trabalhamos</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Planejamento</h3>
-            <p>Definição do projeto</p>
-        </div>
-
-        <div class="card">
-            <h3>Desenvolvimento</h3>
-            <p>Construção do sistema</p>
-        </div>
-
-        <div class="card">
-            <h3>Testes</h3>
-            <p>Garantia de qualidade</p>
-        </div>
-
-        <div class="card">
-            <h3>Entrega</h3>
-            <p>Deploy e suporte</p>
-        </div>
-
-    </div>
-
 </section>
+
+<section class="planos">
+<h2>Escolha o plano ideal para sua empresa</h2>
+<p>Soluções completas, escaláveis e seguras para empresas de todos os portes.</p>
+
+<div class="cards">
+
+<div class="card">
+    <div class="conteudo">
+        <h3>Básico</h3>
+        <h4>Pequeno Porte</h4>
+        <ul>
+            <li>Sistema personalizado</li>
+            <li>Funcionalidades essenciais</li>
+            <li>Suporte por e-mail</li>
+            <li>Atualizações inclusas</li>
+        </ul>
+    </div>
+    <div class="preco">R$ 99/mês</div>
+    <a href="checkout.html">
+    <button>Contratar Plano</button>
+</a>
+</div>
+
+<div class="card destaque">
+    <div class="conteudo">
+        <span class="mais">MAIS ESCOLHIDO</span>
+        <h3>Profissional</h3>
+        <h4>Médio Porte</h4>
+        <ul>
+            <li>Sistema completo</li>
+            <li>Integrações e APIs</li>
+            <li>Relatórios avançados</li>
+            <li>Suporte prioritário</li>
+            <li>Atualizações contínuas</li>
+        </ul>
+    </div>
+    <div class="preco">R$ 199/mês</div>
+    <a href="checkout.html">
+    <button>Contratar Plano</button>
+</a>
+</div>
+
+<div class="card">
+    <div class="conteudo">
+        <h3>Empresarial</h3>
+        <h4>Grande Porte</h4>
+        <ul>
+            <li>Sistema completo escalável</li>
+            <li>Integrações ilimitadas</li>
+            <li>Suporte VIP 24/7</li>
+            <li>Backup e segurança</li>
+            <li>Consultoria dedicada</li>
+        </ul>
+    </div>
+    <div class="preco">R$ 399/mês</div>
+    <a href="checkout.html">
+    <button>Contratar Plano</button>
+</a>
+</div>
+
+</div>
+</section>
+
+<section class="hardware">
+<h2>Estrutura ideal para rodar seu sistema</h2>
+
+<div class="hardware-cards">
+
+<div class="pc-card">
+<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80">
+<h3>Básico</h3>
+<ul>
+<li>Intel i5</li>
+<li>8GB RAM</li>
+<li>SSD 256GB</li>
+<li>Windows 11 Pro</li>
+</ul>
+<div class="valor">R$ 2.000</div>
+<a href="checkout.html">
+    <button>Comprar Agora</button>
+</a>
+</div>
+
+<div class="pc-card">
+<img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=700&q=80">
+<h3>Intermediário</h3>
+<ul>
+<li>Intel i7</li>
+<li>16GB RAM</li>
+<li>SSD 512GB</li>
+<li>Windows 11 Pro</li>
+</ul>
+<div class="valor">R$ 3.500</div>
+<a href="checkout.html">
+    <button>Comprar Agora</button>
+</a>
+</div>
+
+<div class="pc-card">
+<img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=700&q=80">
+<h3>Avançado</h3>
+<ul>
+<li>Intel i9</li>
+<li>32GB RAM</li>
+<li>SSD 1TB</li>
+<li>Windows 11 Pro</li>
+</ul>
+<div class="valor">R$ 5.500</div>
+<a href="checkout.html">
+    <button>Comprar Agora</button>
+</a>
+</div>
+
+</div>
+
+<div class="pacote">
+    <div>
+        <h2>Pacote Completo</h2>
+        <p>Software + Hardware + Instalação + Suporte</p>
+    </div>
+
+    <div>
+        <h3>R$ 499/mês</h3>
+        <a href="checkout.html?plano=pacote">
+    Quero este pacote
+</a>
+    </div>
+</div>
+</section>
+
+<section class="beneficios">
+<div class="beneficio"><h4>Segurança Garantida</h4><p>Proteção de dados e sistemas.</p></div>
+<div class="beneficio"><h4>Suporte Especializado</h4><p>Atendimento rápido e eficiente.</p></div>
+<div class="beneficio"><h4>Soluções Escaláveis</h4><p>Sistemas que crescem com sua empresa.</p></div>
+<div class="beneficio"><h4>Melhor Custo-Benefício</h4><p>Planos acessíveis com alto retorno.</p></div>
+</section>
+
+<section class="cta">
+<h2>Pronto para transformar seu negócio?</h2>
+<p>Fale com nossos especialistas.</p>
+
+<a href="https://wa.me/5511988888888" target="_blank">
+    Falar no WhatsApp
+</a>
+</section>
+
+<div id="modalPlanos" class="modal">
+
+    <div class="modal-box">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+
+       <div class="modal-grid">
+
+    <div class="modal-info">
+
+        <h2>Escolha o plano ideal</h2>
+
+        <p>
+            Soluções completas para impulsionar seu negócio
+            com tecnologia e suporte especializado.
+        </p>
+
+        <div class="linha"></div>
+
+        <div class="vantagens">
+
+            <h3>Por que escolher a TitanX?</h3>
+
+            <div class="vantagem">
+                <div class="icone">⚡</div>
+
+                <div>
+                    <strong>Alta Performance</strong>
+
+                    <p>
+                        Servidores e sistemas otimizados
+                        para máxima velocidade.
+                    </p>
+                </div>
+            </div>
+
+            <div class="vantagem">
+                <div class="icone">🛡</div>
+
+                <div>
+                    <strong>Segurança Total</strong>
+
+                    <p>
+                        Proteção avançada de dados
+                        e backups diários.
+                    </p>
+                </div>
+            </div>
+
+            <div class="vantagem">
+                <div class="icone">💬</div>
+
+                <div>
+                    <strong>Suporte Especializado</strong>
+
+                    <p>
+                        Atendimento rápido por e-mail
+                        e WhatsApp.
+                    </p>
+                </div>
+            </div>
+
+            <div class="vantagem">
+                <div class="icone">📈</div>
+
+                <div>
+                    <strong>Escalabilidade</strong>
+
+                    <p>
+                        Planos que crescem junto
+                        com seu negócio.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="garantia">
+
+            <strong>Garantia de 7 dias</strong>
+
+            <p>
+                Não ficou satisfeito?
+                Devolvemos 100% do seu dinheiro.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="modal-planos">
+
+    <div class="modal-card">
+
+        <h3>Básico</h3>
+
+        <span class="subtitulo">Pequeno Porte</span>
+
+        <strong>R$ 99/mês</strong>
+
+        <div class="linha"></div>
+
+        <ul>
+            <li>Sistema personalizado</li>
+            <li>Funcionalidades essenciais</li>
+            <li>Suporte por e-mail</li>
+            <li>Atualizações inclusas</li>
+            <li>1 usuário</li>
+            <li>1GB armazenamento</li>
+            <li>Backup semanal</li>
+            <li>Integrações básicas</li>
+        </ul>
+
+        <a href="checkout.html">
+    <button>Contratar Plano</button>
+</a>
+
+        <span class="seguro">🔒 Pagamento 100% seguro</span>
+
+    </div>
+
+    <div class="modal-card destaque">
+
+        <span class="badge">⭐ MAIS ESCOLHIDO</span>
+
+        <h3>Profissional</h3>
+
+        <span class="subtitulo">Médio Porte</span>
+
+        <strong>R$ 199/mês</strong>
+
+        <div class="linha"></div>
+
+        <ul>
+            <li>Sistema completo</li>
+            <li>Integrações e APIs</li>
+            <li>Relatórios avançados</li>
+            <li>Suporte prioritário</li>
+            <li>Atualizações contínuas</li>
+            <li>Até 5 usuários</li>
+            <li>10GB armazenamento</li>
+            <li>Backup diário</li>
+            <li>Dashboard personalizado</li>
+        </ul>
+
+        <a href="checkout.html">
+    <button>Contratar Plano</button>
+</a>
+
+        <span class="seguro">🔒 Pagamento 100% seguro</span>
+
+    </div>
+
+    <div class="modal-card">
+
+        <h3>Empresarial</h3>
+
+        <span class="subtitulo">Grande Porte</span>
+
+        <strong>R$ 399/mês</strong>
+
+        <div class="linha"></div>
+
+        <ul>
+            <li>Sistema escalável</li>
+            <li>Integrações ilimitadas</li>
+            <li>Suporte VIP 24/7</li>
+            <li>Backup avançado</li>
+            <li>Consultoria dedicada</li>
+            <li>Usuários ilimitados</li>
+            <li>Armazenamento ilimitado</li>
+            <li>Infraestrutura dedicada</li>
+            <li>SLA 99,9%</li>
+        </ul>
+
+        <a href="checkout.html">
+    <button>Contratar Plano</button>
+</a>
+
+        <span class="seguro">🔒 Pagamento 100% seguro</span>
+
+    </div>
+
+</div>
+
+</div>
+
+<script>
+function abrirModal(){
+    document.getElementById("modalPlanos").classList.add("ativo");
+}
+
+function fecharModal(){
+    document.getElementById("modalPlanos").classList.remove("ativo");
+}
+</script>
+
+
+</body>
+</html>
